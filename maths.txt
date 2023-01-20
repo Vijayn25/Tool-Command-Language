@@ -1,0 +1,28 @@
+#!/usr/bin/tclsh
+
+set a 3
+set b 5.0
+ 
+# Addition 
+set c [expr $a+$b]
+puts "Addition of $a and $b : \t$c"
+# Subraction 
+set k [expr $a-$b] 
+puts "Modulous of $a and $b : \t$k"
+# Multipilcation
+set p [expr $a*$b] 
+puts "Multipilcation of $a and $b : \t$p"
+# Divison 
+set g [expr $a/$b] 
+puts "Divison  of $a and $b : \t$g"
+# Modulous
+set m [expr $a-$b] 
+puts "Modulous of $a and $b : \t$m"
+# Divison gate
+set d [expr $b/$a] 
+puts "Division of $a and $b : \t$d"
+
+# Convert the floating point to data_typr($varaibale)
+
+set i [expr int($d)]
+puts "Division of $a and $b in integer : \t$i"

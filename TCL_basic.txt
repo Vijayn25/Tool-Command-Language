@@ -1,0 +1,24 @@
+#!/usr/bin/tclsh
+
+
+
+# TOOL COMMAND LANGUVAGE - TCL
+# set command is used to the set tha user wanted to the variable.
+# puts commands to display the output of the varaible.
+
+
+set a 10
+set d 100
+set b "10 20 20 10 129 10 "
+set c "I am King "
+
+
+# $ " Is used to content of the Variable";
+
+
+puts "Value of.................:\t$a"
+puts "Value of.................:\t$b"
+puts "Value of.................:\t$c"
+
+
+
