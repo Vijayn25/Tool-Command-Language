@@ -1,0 +1,9 @@
+#!/usr/bin/tclsh
+
+# Write program number from 1 to 100 which is Divisible by 7;
+
+for {set a 1} {$a <= 100 } {incr a} {
+if { $a%7 == 0} {
+puts "$a"
+} 
+}
