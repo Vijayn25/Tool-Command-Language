@@ -1,0 +1,13 @@
+#!/usr/bin/tclsh
+
+if 0 { 
+sytanx 
+for {initalization} {condition} {Increment/decrement} {
+#body of the loop
+}
+}
+for {set a 1} {$a!=0} {incr $a} {
+puts $a
+}
+
+#'incr' is used increment the varaiable.
