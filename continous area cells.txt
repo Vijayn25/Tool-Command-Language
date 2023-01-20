@@ -1,0 +1,25 @@
+#!/usr/bin/tclsh
+
+if {$argc%4!=0} {
+puts "Error in Arguments "
+exit 
+} 
+
+
+#lrange -- Used to set the list index ranges 
+#lindex -> used to acess the particular indx
+
+set count [expr $argc/4]
+set total 0
+for {set i 0} {$i<$count} {incr i} {
+set a [expr $i*4]
+set b [expr ($i*4)+1]
+set c [expr ($i*4)+2]
+set d [expr ($i*4)+3]
+
+lassign [lrange $argv $a $d] llx lly urx ury
+set area [expr ($urx-$llx)*($ury-$llx)]
+puts "Area of $i: $area"
+set total [expr $area+$total]
+}
+puts "Area of total: $total"
