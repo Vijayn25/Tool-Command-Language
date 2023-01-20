@@ -1,0 +1,20 @@
+#!/usr/bin/tclsh
+
+
+
+#first check the four arguments if error in arugment count print error and
+#exit the program
+
+#if i have 4 arguments count calculate area of (urx-llx)*(ury-lly)
+# argument is passed in this order llx lly urxury
+
+if {$argc!=4} {
+puts "error in arugments"
+exit
+}
+
+#lassign -- Assgin elements of varaiable to specified inividual variables
+
+lassign $argv llx lly urx ury
+set area [expr ($urx-$llx)*($ury-$lly)]
+puts "Area of cell : $area"
