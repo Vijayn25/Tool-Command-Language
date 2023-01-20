@@ -1,0 +1,14 @@
+#!/usr/bin/tclsh
+
+if 0 {
+while {Condition} {
+# Body of the loop
+ } 
+} 
+
+set a 50
+while {$a > 0} {
+lappend e $a
+incr a -1 
+}
+puts $e
