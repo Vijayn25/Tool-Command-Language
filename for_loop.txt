@@ -6,7 +6,7 @@ for {initalization} {condition} {Increment/decrement} {
 #body of the loop
 }
 }
-for {set a 1} {$a!=0} {incr $a} {
+for {set a 1} {$a!=0} {incr a} {
 puts $a
 }
 
