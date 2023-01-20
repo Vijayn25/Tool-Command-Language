@@ -1,0 +1,23 @@
+#!/usr/bin/tclsh
+# for multi line use the if 0 { //// Want to type \\\\ }
+
+if 0 {
+syntax :
+if {Condition} {
+#body of the loop 
+} elseif  {Condition} {
+#body of the loop 
+} else {
+#body of the loop 
+}
+}
+
+set a 10
+set b 10
+if {$a > $b} {
+puts " A is big $a "
+} elseif {$a==$b} {
+puts "$a and $b Equal"
+} else { 
+puts " B is big $b "
+}
