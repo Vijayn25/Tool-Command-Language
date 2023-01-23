@@ -1,0 +1,12 @@
+proc fact {num} { 
+if {$num>1} {
+set a [expr ($num)*[fact [expr ($num-1)]]]
+return $a
+} else {
+return 1
+}
+}
+
+lassign $argv num 
+set a [fact $num]
+puts $a
