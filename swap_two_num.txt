@@ -1,0 +1,11 @@
+#!/usr/bin/tclsh
+
+# Swapping without using temp variable
+
+
+lassign $argv a b 
+set a [expr $a+$b]
+set b [expr $a-$b]
+set a [expr $a-$b]
+puts "a=$a"
+puts "b=$b"
