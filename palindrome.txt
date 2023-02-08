@@ -1,0 +1,24 @@
+#!/usr/bin/tclsh
+
+# Palidrome or not using 
+
+proc palin {a n l} {
+for {set i 0} {$i<=$n} {incr i} {
+set e [string index $a $i]
+set b [expr $l-$i-1]
+set c [string index $a $b]
+if {$e!=$c} {
+return "Not palindrome"
+exit
+}
+}
+return "Palindroe"
+}
+
+
+
+gets stdin a
+set l [string length $a]
+set n [expr $l/2]
+set h [palin $a $n $l]
+puts $h
