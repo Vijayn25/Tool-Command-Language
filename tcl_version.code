@@ -1,0 +1,4 @@
+#!/usr/bin/tclsh
+
+puts [info tclversion]
+puts [info patchlevel]
