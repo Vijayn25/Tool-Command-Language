@@ -1,0 +1,11 @@
+#!/usr/bin/tclsh
+
+gets stdin num
+set a 0
+set b 1
+for {set i 0} { $i<=$num} {incr i} {
+set next [expr {$a+$b}]
+puts $a
+set a $b
+set b $next 
+}
