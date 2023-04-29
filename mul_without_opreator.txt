@@ -1,0 +1,11 @@
+#!/usr/bin/tclsh 
+
+# mulitiplication without the operator 
+
+gets stdin a 
+gets stdin b 
+set mul 0
+for {set i 0} {$i<$b} {incr i} {
+set mul [expr $mul+$a] 
+}
+puts "multiplication : $a and $b is $mul"
