@@ -1,0 +1,13 @@
+
+#!/usr/bin/tclsh
+
+gets stdin a
+for {set i 1} {$i<=$a} {incr i} {
+puts $i
+}
+for {set j 1} {$j<=[expr $a-1]} {incr j -1} {
+if {$j==$a}{
+puts "$j"
+} else {
+puts "*"
+}
