@@ -1,0 +1,10 @@
+#!/usr/bin/tclsh
+
+set mail $argv 
+
+
+if {[regexp -nocase {^[a-z0-9_]*@[a-z0-9]*\.com|ac|in|edu|} $mail]} {
+puts "correct"
+} else {
+puts "Not correct"
+}
